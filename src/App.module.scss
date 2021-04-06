@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+    max-width: 1000px;
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 0px 15px 0px 15px;
+}
+
+button {
+    font-family: 'Pacifico', cursive;
+}
+
+.header {
+    box-sizing: border-box;
+    display: grid;
+    background-color: rgb(197, 234, 243);
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid rgb(124, 207, 228);
+    border-bottom: none;
+    &Text {
+        font-size: 22pt; 
+        margin-left: 5px;
+    }
+    &Icon {
+        justify-self: end;
+        align-self: center;
+        margin-right: 5px;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60px 300px 100px;
+}
+.todoListComponent {
+    background-color: rgb(217, 239, 245);
+    border-right: 3px solid rgb(124, 207, 228);
+    border-left: 3px solid rgb(124, 207, 228);
+    border-bottom: 3px solid rgb(124, 207, 228);
+}

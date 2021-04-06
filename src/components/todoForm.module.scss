@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+@keyframes anim {
+	from {
+		background-color: rgb(12, 156, 67);
+	}
+	to {
+		background-color: rgb(88, 192, 166);
+	}
+}
+
+.form {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 50px;
+    column-gap: 10px;
+    &Wrap{
+        background-color: rgb(197, 234, 243); 
+        border-radius: 0 0 10px 10px;
+        border: 3px solid rgb(124, 207, 228);
+        border-top: none;
+    }
+    &Textarea{
+        outline: none;
+        font-family: 'Pacifico', cursive;
+        padding-left: 5px;
+        padding-top: 3px;
+        box-sizing: border-box;
+        resize: none;
+        width: 100%;
+        height: 100%;
+        border: 1px solid grey;
+        border-radius: 5px;
+        
+        &Wrap{
+        }
+        &:hover{
+            border: 1px solid grey;
+        }
+    }
+    &Select{
+        font-family: 'Pacifico', cursive;
+        margin-bottom: 7px;
+        &Wrap{
+            align-self: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &Button{
+        margin-bottom: 5px;
+        background-color: rgb(124, 207, 228);
+        border: 1px solid grey;
+        border-radius: 4px;
+        transition: 0.3s;
+        outline: none;
+        &:hover {
+            transition: 0.3s;
+            background-color: rgb(88, 192, 166);
+        }
+        &:active {
+            animation: anim 0.3s;
+        }
+        &Wrap{
+            align-self: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .form {
+        grid-template-columns: 1fr auto;
+    }
+}
